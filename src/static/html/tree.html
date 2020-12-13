@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interfaces Tree Menu</title>
+    <link rel="stylesheet" href="tree.css"/>
+  </head>
+  <body>
+    <ul class="tree">
+        {% for n in data %}
+          <li class="section">
+            <input type="checkbox" id="groupA"/>
+            <label for="groupA">{{n["interface"]}}</label>
+            <ul>
+              <li>{{n["description"]}}</li>
+              <li>{{n["ip_address"]}}</li>
+            </ul>
+          </li>
+        {% endfor %}
+    </ul>
+  </body>
+</html>
