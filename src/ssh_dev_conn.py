@@ -51,7 +51,7 @@ def parse_interface_data(data):
                 key = m_obj.group("key").strip()
                 key = Conv_Dict.get(key, key)
                 val = m_obj.group("val").strip().strip('"')
-                if key == b"ip_address":
+                if key == "ip_address":
                     ip_addr, *netmask = val.split()
                     idct["ip_address"] = ip_addr
                     idct["subnet"] = netmask[0] if len(netmask) > 0 else ""
