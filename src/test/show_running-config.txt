@@ -119,10 +119,6 @@ interface FastEthernet3/14
 !
 interface FastEthernet3/15
 !
-interface FastEthernet3/20
- description "This is an assignment"
- ip address 172.16.2.22 255.255.255.0
-!
 interface Vlan1
  no ip address
 !

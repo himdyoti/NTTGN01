@@ -1,194 +1,186 @@
 [
   {
-    "description": "netpalm", 
-    "duplex": "auto", 
-    "interface": "FastEthernet0/0", 
-    "ip_address": "10.0.2.27", 
-    "speed": "auto", 
-    "subnet": "255.255.255.0"
-  }, 
+    "interface": "FastEthernet0/0",
+    "description": "netpalm",
+    "ip_address": "10.0.2.27 255.255.255.0",
+    "subnet": "",
+    "duplex": "auto",
+    "speed": "auto"
+  },
   {
-    "description": "", 
-    "duplex": "", 
-    "interface": "Serial0/0", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
-  }, 
+    "interface": "Serial0/0",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "", 
-    "duplex": "auto", 
-    "interface": "FastEthernet0/1", 
-    "ip_address": "", 
-    "speed": "auto", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet0/1",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "auto",
+    "speed": "auto"
+  },
   {
-    "description": "", 
-    "duplex": "", 
-    "interface": "Serial0/1", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
-  }, 
+    "interface": "Serial0/1",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "", 
-    "duplex": "auto", 
-    "interface": "FastEthernet1/0", 
-    "ip_address": "", 
-    "speed": "auto", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet1/0",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "auto",
+    "speed": "auto"
+  },
   {
-    "description": "", 
-    "duplex": "auto", 
-    "interface": "FastEthernet2/0", 
-    "ip_address": "", 
-    "speed": "auto", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet2/0",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "auto",
+    "speed": "auto"
+  },
   {
-    "description": "This is an assignment", 
-    "duplex": "", 
-    "interface": "FastEthernet3/0", 
-    "ip_address": "172.16.2.1", 
-    "speed": "", 
-    "subnet": "255.255.255.0"
-  }, 
+    "interface": "FastEthernet3/0",
+    "description": "This is an assignment",
+    "ip_address": "172.16.2.1 255.255.255.0",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "", 
-    "duplex": "", 
-    "interface": "FastEthernet3/1", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet3/1",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "", 
-    "duplex": "", 
-    "interface": "FastEthernet3/2", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet3/2",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "", 
-    "duplex": "", 
-    "interface": "FastEthernet3/3", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet3/3",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "", 
-    "duplex": "", 
-    "interface": "FastEthernet3/4", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet3/4",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "", 
-    "duplex": "", 
-    "interface": "FastEthernet3/5", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet3/5",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "", 
-    "duplex": "", 
-    "interface": "FastEthernet3/6", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet3/6",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "", 
-    "duplex": "", 
-    "interface": "FastEthernet3/7", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet3/7",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "", 
-    "duplex": "", 
-    "interface": "FastEthernet3/8", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet3/8",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "", 
-    "duplex": "", 
-    "interface": "FastEthernet3/9", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet3/9",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "", 
-    "duplex": "", 
-    "interface": "FastEthernet3/10", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet3/10",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "", 
-    "duplex": "", 
-    "interface": "FastEthernet3/11", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet3/11",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "", 
-    "duplex": "", 
-    "interface": "FastEthernet3/12", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet3/12",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "", 
-    "duplex": "", 
-    "interface": "FastEthernet3/13", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet3/13",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "", 
-    "duplex": "", 
-    "interface": "FastEthernet3/14", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet3/14",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "", 
-    "duplex": "", 
-    "interface": "FastEthernet3/15", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
-  }, 
+    "interface": "FastEthernet3/15",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
+  },
   {
-    "description": "This is an assignment", 
-    "duplex": "", 
-    "interface": "FastEthernet3/20", 
-    "ip_address": "172.16.2.22", 
-    "speed": "", 
-    "subnet": "255.255.255.0"
-  }, 
-  {
-    "description": "", 
-    "duplex": "", 
-    "interface": "Vlan1", 
-    "ip_address": "", 
-    "speed": "", 
-    "subnet": ""
+    "interface": "Vlan1",
+    "description": "",
+    "ip_address": "",
+    "subnet": "",
+    "duplex": "",
+    "speed": ""
   }
 ]
