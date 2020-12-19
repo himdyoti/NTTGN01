@@ -1,5 +1,5 @@
 """
-module to securely connect devices using paramiko
+module to securely connect devices using netmiko
 """
 import json
 from collections import OrderedDict

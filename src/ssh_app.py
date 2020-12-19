@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, make_response
+from flask import Flask, jsonify, make_response, render_template
 from api_handler import handler_get_interfaces, handler_get_interface
 import json
 app = Flask(__name__)
@@ -17,6 +17,11 @@ def get_single_interface(iname, inum=None):
     iface = "{}/{}".format(iname, inum) if inum else iname
     data = handler_get_interface(iface)
     return json.dumps(data), 200
+
+
+@app.route("/get_interface_htm", methods=["GET"], strict_slashes=False)
+def get_single_interface_htm():
+    return render_template('index.html', title='Home')
 
 
 if __name__ == "__main__":
