@@ -1,12 +1,11 @@
 """
 module to securely connect devices using paramiko
 """
-import time
 import json
 from collections import OrderedDict
 from netmiko import ConnectHandler
-from base.utils import patt, patt2
-from base.config import Device_List, Cfg_Timeouts, Conv_Dict
+from base.utils import patt2
+from base.config import Device_List, Conv_Dict
 
 
 def get_interfaces(conn_config, cmds=None):
@@ -14,6 +13,7 @@ def get_interfaces(conn_config, cmds=None):
     connects to remote ssh server and gets interface details as plain text.
     """
     output = ""
+    conn = None
 
     if cmds is None:
         cmds = ["ls"]
@@ -22,10 +22,9 @@ def get_interfaces(conn_config, cmds=None):
         output = conn.send_command(cmds[0])
     except Exception as ex_obj:
         print(ex_obj)
-
-    if len(output) < 5:
-        with open("show_running-config.txt") as fdr:
-            output = fdr.read()
+    finally:
+        if conn is not None:
+            conn.cleanup()
     return output
 
 
@@ -44,9 +43,9 @@ def parse_interface_data(data):
     interface_list = []
     for line_block in data.split("!"):
         line_block = line_block.strip()
-        if line_block != "" and patt.match(line_block):
-            default_d = {"interface": "", "description": "", "ip_address": "", "subnet": "", "duplex": "", "speed": ""}
-            idct = OrderedDict(default_d)
+        if line_block != "" and line_block.find("interface") != -1:
+            dict_order = {"interface": "", "ip_address": "", "subnet": "", "description": "", "duplex": "", "speed": ""}
+            idct = OrderedDict(dict_order)
             for m_obj in patt2.finditer(line_block):
                 key = m_obj.group("key").strip()
                 key = Conv_Dict.get(key, key)
@@ -58,7 +57,6 @@ def parse_interface_data(data):
                     continue
                 idct[key] = val
             interface_list.append(idct)
-    print(interface_list)
     return interface_list
 
 
@@ -66,10 +64,9 @@ def main_batch(conn_config):
     """
     running all functions
     """
-    cmds = ["show running-config\n"]
+    cmds = ["show running-config"]
     data = get_interfaces(conn_config, cmds)
     parsed_data = parse_interface_data(data)
-    #print(parsed_data)
     save_data_json(parsed_data, fpath="interfaces.json")
 
 
