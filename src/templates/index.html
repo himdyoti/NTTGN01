@@ -4,7 +4,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <script src="{{url_for('static', filename='js/jquery3.5.1.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/jquery_351.min.js')}}"></script>
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/tree.css')}}"/>
   </head>
   <body>
@@ -28,9 +28,14 @@
             type: 'GET',
             success: function(json) {
               tr = "";
-              $.each(json, function(key,val){
-                  tr += '<tr><td>'+key+'</td><td>'+val+'</td></tr>';
-              });
+              if(jQuery.isEmptyObject(json)){
+                tr = "<tr><td>No Data Found</td></tr>"
+              } else {
+                $.each(json, function(key,val){
+                    tr += '<tr><td>'+key+'</td><td>'+val+'</td></tr>';
+                });              
+              }
+
               $('#interface_table').html(tr);
             },
             error: function(xhr, ajaxOptions, thrownError) {
